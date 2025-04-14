@@ -1,0 +1,9 @@
+#dgTelefonos { width: 100%; }
+#dgTelefonos TD { padding: 5px;}
+
+#TablaDatosTelefono {padding:0px;width:40%;border-style:none;}
+#TablaDatosTelefono TD{vertical-align:middle;}
+.LabelError{color:Red;}
+.Labels{font-weight:bold;}
+.TextBoxes{width:200px;}
+.Combos{width:200px;}

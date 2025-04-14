@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A767440-6AAC-4001-AC85-414FC43D489F}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>e-potecarioadm</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BH.EPotecario.Adm</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <WebReference_EnableProperties>true</WebReference_EnableProperties>
+    <WebReference_EnableSQLTypes>false</WebReference_EnableSQLTypes>
+    <WebReference_EnableLegacyEventingModel>true</WebReference_EnableLegacyEventingModel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BH.SysNet, Version=2.0.0.0, Culture=neutral, PublicKeyToken=86aaa337f573f970, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\applications\BH.SysNet\2.0.0.0\BH.SysNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BH.SysNetId, Version=2.0.0.0, Culture=neutral, PublicKeyToken=86aaa337f573f970, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\applications\BH.SysNet\2.0.0.0\BH.SysNetId.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BH.Util, Version=2.0.0.0, Culture=neutral, PublicKeyToken=86aaa337f573f970, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\applications\BH.Util\2.0.0.0\BH.Util.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BH.WebControls, Version=1.0.0.6, Culture=neutral, PublicKeyToken=86aaa337f573f970">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\applications\BH.WebControls\1.0.0.6 - Homo y Prod\BH.WebControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Enums.NET, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7ea1c1650d506225, processorArchitecture=MSIL">
+      <HintPath>..\packages\Enums.NET.4.0.1\lib\net45\Enums.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedNumerics.BigDecimal, Version=2025.1001.2.129, Culture=neutral, PublicKeyToken=65f1315a45ad8949, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExtendedNumerics.BigDecimal.2025.1001.2.129\lib\net48\ExtendedNumerics.BigDecimal.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=3.4.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.3.4.1\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=3.0.4.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.3.0.4\lib\net462\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cd8b63ad3d691a37, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.Signed.5.0.0\lib\net48\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.4\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.9.0.4\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.4\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.0\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.4.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.4.9\lib\net48\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Core, Version=2.7.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.3\lib\net472\NPOI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.7.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.3\lib\net472\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.7.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.3\lib\net472\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.7.3.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.7.3\lib\net472\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>..\packages\SixLabors.Fonts.1.0.1\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.ImageSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>..\packages\SixLabors.ImageSharp.2.1.10\lib\net472\SixLabors.ImageSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Pkcs.8.0.1\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml, Version=8.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Xml.8.0.2\lib\net462\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.5.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficios.aspx.cs">
+      <DependentUpon>AdmBeneficios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficios.aspx.designer.cs">
+      <DependentUpon>AdmBeneficios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosAlianzas.aspx.cs">
+      <DependentUpon>AdmBeneficiosAlianzas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosAlianzas.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosAlianzas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosSucursales.aspx.cs">
+      <DependentUpon>AdmBeneficiosSucursales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosSucursales.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosSucursales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosAhorros.aspx.cs">
+      <DependentUpon>AdmBeneficiosAhorros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosAhorros.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosAhorros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosTipoCliente.aspx.cs">
+      <DependentUpon>AdmBeneficiosTipoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosTipoCliente.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosTipoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosCuotas.aspx.cs">
+      <DependentUpon>AdmBeneficiosCuotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosCuotas.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosCuotas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosDiaSemana.aspx.cs">
+      <DependentUpon>AdmBeneficiosDiaSemana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosDiaSemana.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosDiaSemana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosMediosPago.aspx.cs">
+      <DependentUpon>AdmBeneficiosMediosPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosMediosPago.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosMediosPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosProvincias.aspx.cs">
+      <DependentUpon>AdmBeneficiosProvincias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosProvincias.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosProvincias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosLocalidades.aspx.cs">
+      <DependentUpon>AdmBeneficiosLocalidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosLocalidades.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosLocalidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosCategorias.aspx.cs">
+      <DependentUpon>AdmBeneficiosCategorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosCategorias.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosCategorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosBasesYCondiciones.aspx.cs">
+      <DependentUpon>AdmBeneficiosBasesYCondiciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\AdmBeneficiosBasesYCondiciones.aspx.designer.cs">
+      <DependentUpon>AdmBeneficiosBasesYCondiciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\ImportarExcels.aspx.cs">
+      <DependentUpon>ImportarExcels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\ImportarExcels.aspx.designer.cs">
+      <DependentUpon>ImportarExcels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beneficios\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beneficios\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DateTimeExtensions.cs" />
+    <Compile Include="Common\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\IDs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ShowImageClasses\SizeDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ShowImageClasses\SizeFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ShowImageClasses\SizeFormatType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\ShowImageClasses\SizeHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\TipoRegEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\Beneficio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\BeneficiosWeb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\CedulaHipotecaria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\ConsultaMail.cs" />
+    <Compile Include="Componentes\ContextoTrans.cs" />
+    <Compile Include="Componentes\DBSchemaSingleton.cs" />
+    <Compile Include="Componentes\Persisitor.cs" />
+    <Compile Include="Componentes\TareasAdmin.cs" />
+    <Compile Include="Componentes\Parametros.cs" />
+    <Compile Include="Componentes\EspacioDuenios.cs" />
+    <Compile Include="Componentes\LugaresDePagoVisa.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\ObjectBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\Promociones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\SI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\Sucursales.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Componentes\TasaCombinada.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelperWeb\HelperWeb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Master.master.cs">
+      <DependentUpon>Master.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.master.designer.cs">
+      <DependentUpon>Master.master</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuTab.ascx.cs">
+      <DependentUpon>MenuTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuTab.ascx.designer.cs">
+      <DependentUpon>MenuTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\AdmParametros.aspx.cs">
+      <DependentUpon>AdmParametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parametros\AdmParametros.aspx.designer.cs">
+      <DependentUpon>AdmParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursales\admSucursales.aspx.cs">
+      <DependentUpon>admSucursales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sucursales\admSucursales.aspx.designer.cs">
+      <DependentUpon>admSucursales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursales\admTelefonos.aspx.cs">
+      <DependentUpon>admTelefonos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sucursales\admTelefonos.aspx.designer.cs">
+      <DependentUpon>admTelefonos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TareasDeAdmin.aspx.cs">
+      <DependentUpon>TareasDeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TareasDeAdmin.aspx.designer.cs">
+      <DependentUpon>TareasDeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Beneficios\AdmBeneficios.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosAlianzas.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosSucursales.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosAhorros.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosTipoCliente.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosCuotas.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosDiaSemana.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosMediosPago.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosProvincias.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosLocalidades.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosCategorias.aspx" />
+    <Content Include="Beneficios\AdmBeneficiosBasesYCondiciones.aspx" />
+    <Content Include="Beneficios\ImportarExcels.aspx" />
+    <Content Include="Beneficios\default.aspx" />
+    <Content Include="Master.master" />
+    <Content Include="scripts\datepicker\bootstrap-datepicker.js" />
+    <Content Include="scripts\datepicker\datepicker.css" />
+    <Content Include="scripts\JQuery\ArchivosInversores.js" />
+    <Content Include="Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Default.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Parametros\AdmParametros.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="scripts\JQuery\facebox.js" />
+    <Content Include="scripts\JQuery\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="scripts\JQuery\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="scripts\JQuery\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="scripts\JQuery\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="scripts\JQuery\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="scripts\JQuery\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="scripts\JQuery\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="scripts\JQuery\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="scripts\JQuery\images\ui-icons_222222_256x240.png" />
+    <Content Include="scripts\JQuery\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="scripts\JQuery\images\ui-icons_454545_256x240.png" />
+    <Content Include="scripts\JQuery\images\ui-icons_888888_256x240.png" />
+    <Content Include="scripts\JQuery\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-icons_222222_256x240.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-icons_454545_256x240.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-icons_888888_256x240.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="scripts\JQuery\Jquery-UI\jquery-ui.css" />
+    <Content Include="scripts\JQuery\ui.core.js" />
+    <Content Include="scripts\JQuery\Jquery-UI\ui.datepicker.css" />
+    <Content Include="scripts\JQuery\ui.dialog.js" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Menu\Menu1.css" />
+    <Content Include="Menu\Images1\OffF.gif" />
+    <Content Include="Menu\Images1\OffI.gif" />
+    <Content Include="Menu\Images1\OffM.gif" />
+    <Content Include="Menu\Images1\OffOff.gif" />
+    <Content Include="Menu\Images1\OffOn.gif" />
+    <Content Include="Menu\Images1\OnF.gif" />
+    <Content Include="Menu\Images1\OnI.gif" />
+    <Content Include="Menu\Images1\OnM.gif" />
+    <Content Include="Menu\Images1\OnOff.gif" />
+    <Content Include="Menu\ImagesSrc1\BotonesMedioOffConBase.png" />
+    <Content Include="Menu\ImagesSrc1\BotonesMedioOnConBase.png" />
+    <Content Include="Menu\ImagesSrc1\Off.png" />
+    <Content Include="Menu\ImagesSrc1\On.png" />
+    <Content Include="Menu\ImagesSrc\BotonesSource\Boton1Off.png" />
+    <Content Include="Menu\ImagesSrc\BotonesSource\Boton1On.png" />
+    <Content Include="Menu\ImagesSrc\Default.css" />
+    <Content Include="Menu\ImagesSrc\Off.png" />
+    <Content Include="Menu\ImagesSrc\On.png" />
+    <Content Include="Menu\Images\Botones\BotonOff1.gif" />
+    <Content Include="Menu\Images\Botones\BotonOff2.gif" />
+    <Content Include="Menu\Images\Botones\BotonOff3.gif" />
+    <Content Include="Menu\Images\Botones\BotonOff4.gif" />
+    <Content Include="Menu\Images\Botones\BotonOff5.gif" />
+    <Content Include="Menu\Images\Botones\BotonOff6.gif" />
+    <Content Include="Menu\Images\Botones\BotonOff7.gif" />
+    <Content Include="Menu\Images\Botones\BotonOn1.gif" />
+    <Content Include="Menu\Images\Botones\BotonOn2.gif" />
+    <Content Include="Menu\Images\Botones\BotonOn3.gif" />
+    <Content Include="Menu\Images\Botones\BotonOn4.gif" />
+    <Content Include="Menu\Images\Botones\BotonOn5.gif" />
+    <Content Include="Menu\Images\Botones\BotonOn6.gif" />
+    <Content Include="Menu\Images\Botones\BotonOn7.gif" />
+    <Content Include="Menu\Images\Off.htm" />
+    <Content Include="Menu\Images\Off1.gif" />
+    <Content Include="Menu\Images\Off2.gif" />
+    <Content Include="Menu\Images\Off3.gif" />
+    <Content Include="Menu\Images\Off4.gif" />
+    <Content Include="Menu\Images\On.htm" />
+    <Content Include="Menu\Images\On1.gif" />
+    <Content Include="Menu\Images\On2.gif" />
+    <Content Include="Menu\Images\On3.gif" />
+    <Content Include="Menu\Images\On4.gif" />
+    <Content Include="Menu\Images\spacer.gif" />
+    <Content Include="Menu\MenuTab.ascx" />
+    <Content Include="scripts\calendar\calendar-blue.css" />
+    <Content Include="scripts\calendar\calendar-es.js" />
+    <Content Include="scripts\calendar\calendar-setup.js" />
+    <Content Include="scripts\calendar\calendar-setup_stripped.js" />
+    <Content Include="scripts\calendar\calendar.gif" />
+    <Content Include="scripts\calendar\calendar.js" />
+    <Content Include="scripts\calendar\calendar_stripped.js" />
+    <Content Include="scripts\calendar\menuarrow.gif" />
+    <Content Include="scripts\calendar\menuarrow2.gif" />
+    <Content Include="scripts\JQuery\AdmBeneficios.js" />
+    <Content Include="scripts\JQuery\jquery-1.3.2.min.js" />
+    <Content Include="scripts\JQuery\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="scripts\JQuery\jquery.ajaxQueue.js" />
+    <Content Include="scripts\JQuery\jquery.ajax_upload.0.6.min.js" />
+    <Content Include="scripts\JQuery\jquery.autocomplete.js" />
+    <Content Include="scripts\JQuery\jquery.autocomplete.min.js" />
+    <Content Include="scripts\JQuery\jquery.bgiframe.min.js" />
+    <Content Include="scripts\JQuery\jquery.maskedinput-1.2.2.js" />
+    <Content Include="scripts\JQuery\jquery.validate.min.js" />
+    <Content Include="scripts\JQuery\jquery.xmldom-1.0.min.js" />
+    <Content Include="scripts\JQuery\thickbox-compressed.js" />
+    <Content Include="scripts\Js\InversoresLebacs.js" />
+    <Content Include="scripts\Js\InversoresLecaps.js" />
+    <Content Include="scripts\Js\InversoresLetes.js" />
+    <Content Include="scripts\Js\Valida.js" />
+    <Content Include="Sucursales\admSucursales.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Sucursales\admSucursales.css" />
+    <Content Include="Sucursales\admTelefonos.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Sucursales\admTelefonos.css" />
+    <Content Include="TareasDeAdmin.aspx" />
+    <Content Include="Util.js" />
+    <Content Include="Web.config" />
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuTab.ascx.resx">
+      <DependentUpon>MenuTab.ascx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametros\AdmParametros.aspx.resx">
+      <DependentUpon>AdmParametros.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sucursales\admSucursales.aspx.resx">
+      <DependentUpon>admSucursales.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sucursales\admTelefonos.aspx.resx">
+      <DependentUpon>admTelefonos.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TareasDeAdmin.aspx.resx">
+      <DependentUpon>TareasDeAdmin.aspx.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Publicacion1.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\e-potecarioadm.dominio\e-potecarioadm.dominio.csproj">
+      <Project>{c2a56954-936f-4d5d-b321-2a275f38849b}</Project>
+      <Name>e-potecarioadm.dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\e-potecarioadm.servicios\e-potecarioadm.servicios.csproj">
+      <Project>{84ff0973-27ee-42cd-b597-f41f2c9f1f96}</Project>
+      <Name>e-potecarioadm.servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>2461</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/HipotecarioAdm</IISUrl>
+          <NTLMAuthentication>True</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

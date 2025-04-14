@@ -1,0 +1,47 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+p {margin:0px;padding:0px;}
+
+
+body, table, td, select, input, textarea, p
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#003c5b; 	
+	font-size:11px;
+}
+
+/*Links*/
+.Link1{COLOR: #003c5b; TEXT-DECORATION: none }
+.Link1:Visited {COLOR: purple;}
+.Link1:Hover {TEXT-DECORATION:underline;}
+.LabelError{color:Red;}
+.oculto{display:none;}
+.Tilde1 { padding-left: 14px; background: url(img/tilde1.jpg) no-repeat 0px 2px; }
+
+h1 {
+	FONT-WEIGHT: bold;
+	font-size: 14px;
+	text-align: right;
+	border-bottom: solid 1px #003c5b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2 
+{
+	FONT-WEIGHT: bold; margin-bottom:7px; BORDER: #cd461c 1px solid;
+}
+
+h3
+{
+	FONT-WEIGHT: bold; margin-bottom:7px; COLOR: #e1420b; 
+}
+
+.cambiarLogo
+{
+	cursor:hand;
+}
+
+.error {text-align:left; padding-left:5px; color:#e1420b; font-weight:bold; padding: 1px; vertical-align:middle;}

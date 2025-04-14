@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+h1
+{
+	/*margin: 30px 0;
+	padding: 0 200px 15px 0;
+	border-bottom: 1px solid #E5E5E5;*/
+}
+
+.div-admin
+{
+	margin: 20px;
+}
+
+.row-30
+{
+	margin-top: 30px !important;
+}
+
+.has-error
+{
+	color: #a94442;
+}
+
+.borde-BH
+{
+	border-color: #F37121 !important;
+}
+
+.color-BH
+{
+	background-color: #F37121 !important;
+}
+
+.oculto
+{
+	display: none;
+}
+
+.container
+{
+	width: 90% !important;
+}
+
+.centrado
+{
+	text-align: center;
+}
+
+/*TABS*/
+.nav-tabs
+{
+	border-bottom: 2px solid #DDD;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover
+{
+	border-width: 0;
+	color: #FFF !important;
+	background: #F37121;
+}
+
+.nav-tabs > li > a:hover
+{
+	color: #FFF !important;
+}
+
+.nav-tabs > li > a
+{
+	border: none;
+	color: #5a4080 !important;
+	background: #fff;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover
+{
+	border: none;
+	color: #ffffff;
+	background: #F37121;
+}
+
+.nav-tabs > li > a::after
+{
+	content: "";
+	background: #F37121; /*#5a4080;*/
+	height: 2px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: -1px;
+	transition: all 250ms ease 0s;
+	transform: scale(0);
+}
+
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after
+{
+	transform: scale(1);
+}
+
+.tab-nav > li > a::after
+{
+	background: #F37121 none repeat scroll 0% 0%;
+	color: #fff;
+}
+
+.tab-pane
+{
+	padding: 15px 0;
+}
+
+.tab-content
+{
+	padding: 20px;
+}
+
+.nav-tabs > li
+{
+	width: 50%;
+	text-align: center;
+}
+
+.card
+{
+	background: #FFF none repeat scroll 0% 0%;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	margin-bottom: 30px;
+}
+
+body
+{
+	background: #EDECEC;
+	padding: 50px;
+}
+
+@media all and (max-width:724px)
+{
+	.nav-tabs > li > a > span
+	{
+		display: none;
+	}
+
+	.nav-tabs > li > a
+	{
+		padding: 5px 5px;
+	}
+}
+/*TABS*/
+
+.tablaCuadroInfo
+{
+	-webkit-border-radius: 5px 5px 0px 0px;
+	width: 90%;
+	border: 1px solid rgba(243, 113, 33, 0.6);
+}
+
+.filaCuadroInfo
+{
+	background-color: rgba(243, 113, 33, 0.6);
+	color: #FFF;
+}
+
+.celdaCuadroInfo_Titulo
+{
+	background-color: rgba(243, 113, 33, 0.6);
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.celdaCuadroInfo_Dato
+{
+	border: 1px solid rgba(243, 113, 33, 0.6);
+}
+
+.pl10 TD
+{
+	padding-left: 10px;
+}
+
+label{margin-left: 20px;}
+#datepicker{width:180px; margin: 0 20px 20px 20px;}
+#datepicker > span:hover{cursor: pointer;}

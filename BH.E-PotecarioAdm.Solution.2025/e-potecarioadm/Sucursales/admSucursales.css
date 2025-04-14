@@ -1,0 +1,14 @@
+#dgSucursales { width: 100%; }
+#dgSucursales TD {
+    padding: 5px;
+    font-size: 9px !important;
+}
+
+#TablaDatosSucursal {padding:0px;width:25%;border-style:none;}
+#TablaDatosSucursal TD{vertical-align:middle;}
+.LabelError{color:Red;}
+.Labels {
+    font-weight: bold;
+}
+.TextBoxes{width:254px;}
+.Combos{width:254px;}

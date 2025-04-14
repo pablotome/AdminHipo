@@ -1,0 +1,62 @@
+/********** Menu1 ***************/
+#menuTab #tabs a:hover{font-weight: bold;}
+.onOff,.offOff,.offOn{width: 14px; height: 22px;}
+.onI,.offI.onF,.offF{width: 7px; height: 22px;}
+
+.onI{background: url(Images1/OnI.gif) no-repeat;}	
+.onF{background: url(Images1/OnF.gif) no-repeat;}	
+.onM{background: url(Images1/OnM.gif) repeat-x; }
+
+.offI{background: url(Images1/OffI.gif) no-repeat;}
+.offF{background: url(Images1/OffF.gif) no-repeat;}
+.offM{background: url(Images1/OffM.gif) repeat-x; }
+
+.onOff{background: url(Images1/OnOff.gif) no-repeat; }
+.offOff{background: url(Images1/OffOff.gif) no-repeat; }
+.offOn{background: url(Images1/OffOn.gif) no-repeat; }
+
+.onMTexto,.offMTexto,.onOff,.offOff,.offOn,.onI,.offI.onF,.offF
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:White; background-color: transparent;			
+	text-decoration: none; text-align:center;
+	font-size:12px;
+}
+.onMTexto {font-weight: bold;}
+
+/* SubMenu */
+#subMenu,.subMenuOn,.subMenuOff,.sepSM{background-color: #E1420B;}
+#subMenu {margin:0px;padding:1px 0px 3px 1px; }
+#subMenu a:hover{font-weight: bold;}
+.subMenuOff, .subMenuOn, .sepSM
+{	
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;	
+}
+
+.subMenuOn
+{
+	font-weight: bold;
+	color:white;	
+}
+
+.subMenuOff {color:white;}
+.sepSM {color:white;}
+
+
+
+/*Menu Izquierda*/
+DIV#MenuLeft, #menuV {margin-top:20px;}
+DIV#MenuLeft a, #menuV a 
+{	
+	display: block; padding:5px 5px 5px 10px; 
+	COLOR: #003c5b; TEXT-DECORATION: underline;
+	FONT-WEIGHT: bold;	
+}						
+
+DIV#MenuLeft a:Visited, #menuV a:Visited {COLOR: purple;}
+DIV#MenuLeft a.ItemMenuActivo, 
+#menuV a.itemMVActivo  {color:White;background-color:#E1420B;TEXT-DECORATION: none;}
+
+

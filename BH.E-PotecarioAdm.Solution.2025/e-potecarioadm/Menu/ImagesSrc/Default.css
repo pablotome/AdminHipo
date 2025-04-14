@@ -1,0 +1,80 @@
+body {margin: 4px}
+
+.TextoExtraChico, .TextoChico, .Texto, .TextoGrande, .TextoAbsChico, .TextoAbs, .TextoAbsGrande 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:Black; background-color: White;			
+}
+
+.TextoExtraChico {font-size:9px;}
+.TextoChico {font-size:10px;}
+.Texto {font-size:12px;}
+.TextoGrande {font-size:14px;}
+
+/* Absoluto */
+.TextoAbsChico {font-size:xx-small;}
+.TextoAbs {font-size:x-small;}
+.TextoAbsGrande {font-size:small;}
+
+
+/* Footer */
+#Footer
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align:center; font-size:10px;
+	padding-top:2px; border-top: solid 3px #E1420B;  width:100%;
+}
+
+/* Menu */
+#Menu a:hover{color:#8080FF; background-color:Transparent}
+.On1,.On4,.Off1,.Off4 {width: 5px; height: 24px;}
+
+.On1{background: url(Menu/Images/On1.gif) no-repeat;}	
+.On2{background: url(Menu/Images/On2.gif) repeat-x; text-align:center;}
+.On2Texto,.Off2Texto
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:White; background-color: transparent;			
+	text-decoration: none;
+	font-size:10px;
+}
+.On2Texto {	font-weight: bold;}
+.On4{background: url(Menu/Images/On4.gif) no-repeat;}
+
+.Off1{background: url(Menu/Images/Off1.gif) no-repeat;}
+.Off2{background: url(Menu/Images/Off2.gif) repeat-x;text-align:center;}
+.Off2Texto{}
+.Off4{background: url(Menu/Images/Off4.gif) no-repeat;}
+
+/* SubMenu */
+#SubMenu {margin-top:5px; margin-bottom:5px;padding-bottom:3px; border-bottom: solid 3px #E1420B}
+#SubMenu a:hover{color:#8080FF; background-color:White}
+.SubMenuOff, .SubMenuOn, .SepSM
+{	
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;	
+}
+
+.SubMenuOn
+{
+	color:#E1420B;	
+	background-color:White;	
+}
+
+.SubMenuOff
+{
+	color:#212684;	
+	background-color: White;	
+}
+
+.SepSM
+{
+	color:#E1420B;	
+	background-color: White;	
+}
+
+
+
+
+

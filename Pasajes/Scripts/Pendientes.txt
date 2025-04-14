@@ -1,0 +1,46 @@
+Qué se hizo
+  Plugin de importación:
+    Ajustar validaciones de cada campo de cada archivo a importar
+  Plugin de front:
+    Reescribir la lógica de visualización
+    Agregar url por categoría
+    Mejorar filtros en home de categoría (no va a bd)
+
+Pendientes
+  Plugin de importación:
+    Finalizar 
+    
+    
+    
+    
+Hacer
+1. Agregar Campo EsValido en ExcelBeneficio, ExcelAlianza, ExcelSucursal.
+2. Generar el método EsValido para cada objeto con las validaciones necesarias:
+	Beneficio:
+		Titulo no es vacío
+		Clientes no es vacío y es dato válido
+		Medio de pago no es vacío y es dato válido
+		Días no es vacío y es dato válido
+		CFT si no es vacío, es un número con porcentaje
+		Prioridad si no es vacío es 999
+	Alianza:
+		Titulo no es vacío
+		Beneficios no es vacío, son números y los ID existen
+		Categoría no es vacío y es dato válido
+		CategoríaPrincipal no es vacío y es dato válido
+		Orden si no es vacío es 999
+		Activo es 0 o 1
+	Sucursal
+		Titulo no es vacío
+		Calle no es vacío
+		Número no es vacío
+		Localidad no es vacío
+		Código Postal no es vacío
+		Provincia no es vacío
+		Latitud si no es vacío es un decimal
+		Longitud si no es vacío es un decimal
+		IdAlianzas no es vacío, son números y los ID existen
+3. El campo EsValido se completa con las evaluaciones anteriores
+4. Agregar un campo DescripcionError en excelbeneficio, excelalianza, excelsucursal.
+5. El campo DescripcionError se genera con las descripciones de cada error
+

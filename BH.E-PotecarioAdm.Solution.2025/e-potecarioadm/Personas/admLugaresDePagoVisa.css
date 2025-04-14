@@ -1,0 +1,9 @@
+#dgLugaresDePagoVisa { width: 100%; }
+#dgLugaresDePagoVisa TD { padding: 5px;}
+
+#TablaDatosSucursal {padding:0px;width:40%;border-style:none;}
+#TablaDatosSucursal TD{vertical-align:middle;}
+.LabelError{color:Red;}
+.Labels{font-weight:bold;}
+.TextBoxes{width:200px;}
+.Combos{width:200px;}
