@@ -13,8 +13,8 @@ namespace BH.EPotecario.Adm.Dominio
 	{
 		public AhorroMap()
 		{
-			// Mapeo de la tabla
-			Table("Ahorro");
+            // Mapeo de la tabla
+            Table("BEN_Ahorro");
 
 			// Mapeo de la clave primaria
 			Id(a => a.CodAhorro).GeneratedBy.Identity();

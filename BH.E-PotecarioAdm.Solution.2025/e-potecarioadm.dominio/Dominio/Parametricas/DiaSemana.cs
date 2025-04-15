@@ -2,22 +2,22 @@
 
 namespace BH.EPotecario.Adm.Dominio
 {
-	public class Cuota
+	public class DiaSemana
 	{
-		public virtual int CodCuota { get; set; }
+		public virtual int CodDiaSemana { get; set; }
 		public virtual string Nombre { get; set; }
 		public virtual string Slug { get; set; }
 	}
 
-	public class CuotaMap : ClassMap<Cuota>
+	public class DiaSemanaMap : ClassMap<DiaSemana>
 	{
-		public CuotaMap()
+		public DiaSemanaMap()
 		{
-			// Mapeo de la tabla
-			Table("Cuota");
+            // Mapeo de la tabla
+            Table("BEN_DiaSemana");
 
 			// Mapeo de la clave primaria
-			Id(a => a.CodCuota).GeneratedBy.Identity();
+			Id(a => a.CodDiaSemana).GeneratedBy.Identity();
 
 			// Mapeo de las propiedades
 			Map(a => a.Nombre).Length(50).Not.Nullable();

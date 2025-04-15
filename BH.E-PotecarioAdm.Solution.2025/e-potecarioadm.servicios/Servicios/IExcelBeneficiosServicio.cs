@@ -114,22 +114,22 @@ namespace BH.EPotecario.Adm.Servicios
                     {
                         DataRow dr = dtBeneficiosExcel.NewRow();
 
-                        dr["Titulo"] = beneficio.Titulo;
-                        dr["Clientes"] = beneficio.Clientes;
-                        dr["Ahorros"] = beneficio.Ahorros;
-                        dr["Cuotas"] = beneficio.Cuotas;
-                        dr["MediosPago"] = beneficio.MediosPago;
-                        dr["Dias"] = beneficio.Dias;
-                        dr["CFT"] = beneficio.CFT;
-                        dr["BasesYCondiciones"] = beneficio.BasesYCondiciones;
-                        dr["TopeReintegro"] = beneficio.TopeReintegro;
-                        dr["BreveResumen"] = beneficio.BreveResumen;
-                        dr["TipoDescuento"] = beneficio.TipoDescuento;
-                        dr["Prioridad"] = beneficio.Prioridad;
-                        dr["ID_BEN"] = beneficio.ID_BEN;
+                        dr["Titulo"] = beneficio.Titulo.Trim();
+                        dr["Clientes"] = beneficio.Clientes.Trim();
+                        dr["Ahorros"] = beneficio.Ahorros.Trim();
+                        dr["Cuotas"] = beneficio.Cuotas.Trim();
+                        dr["MediosPago"] = beneficio.MediosPago.Trim();
+                        dr["Dias"] = beneficio.Dias.Trim();
+                        dr["CFT"] = beneficio.CFT.Trim();
+                        dr["BasesYCondiciones"] = beneficio.BasesYCondiciones.Trim();
+                        dr["TopeReintegro"] = beneficio.TopeReintegro.Trim();
+                        dr["BreveResumen"] = beneficio.BreveResumen.Trim();
+                        dr["TipoDescuento"] = beneficio.TipoDescuento.Trim();
+                        dr["Prioridad"] = beneficio.Prioridad.Trim();
+                        dr["ID_BEN"] = beneficio.ID_BEN.Trim();
                         dr["IdImportacion"] = beneficio.IdImportacion = idImportacion;
                         dr["RegistroValido"] = beneficio.RegistroValido;
-                        dr["DetalleError"] = beneficio.DetalleError;
+                        dr["DetalleError"] = beneficio.DetalleError.Trim();
 
                         dtBeneficiosExcel.Rows.Add(dr);
                     }
@@ -138,7 +138,7 @@ namespace BH.EPotecario.Adm.Servicios
 
                     using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection))
                     {
-                        bulkCopy.DestinationTableName = "dbo.ExcelBeneficio";
+                        bulkCopy.DestinationTableName = "dbo.BEN_ExcelBeneficio";
 
                         try
                         {
@@ -173,7 +173,7 @@ namespace BH.EPotecario.Adm.Servicios
 
         public override DataTable CrearDataTable()
         {
-            DataTable dtBeneficiosExcel = new DataTable("AlianzasExcel");
+            DataTable dtBeneficiosExcel = new DataTable("BeneficiosExcel");
 
             dtBeneficiosExcel.Columns.Add(new DataColumn("CodBeneficio", typeof(int)));
             dtBeneficiosExcel.Columns.Add(new DataColumn("Titulo", typeof(string)));

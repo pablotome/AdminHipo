@@ -108,6 +108,7 @@ namespace BH.EPotecario.Adm
                     string detalle = $@"
                     <ul>
                         <li>Tipo de importación: {resultado.TipoImportacion}</li>
+                        <li>ImportacionID: {resultado.ImportacionID}</li>
                         <li>Total de registros procesados: {resultado.TotalRegistros}</li>
                         <li>Registros insertados: {resultado.RegistrosInsertados}</li>
                         <li>Registros actualizados: {resultado.RegistrosActualizados}</li>

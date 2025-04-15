@@ -126,11 +126,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\ResultadoImportacion.cs" />
-    <Compile Include="Dominio\Ahorro.cs" />
-    <Compile Include="Dominio\Cuota.cs" />
-    <Compile Include="Dominio\DiaSemana.cs" />
-    <Compile Include="Dominio\MedioDePago.cs" />
-    <Compile Include="Dominio\TipoCliente.cs" />
+    <Compile Include="Dominio\Parametricas\Ahorro.cs" />
+    <Compile Include="Dominio\Parametricas\Cuota.cs" />
+    <Compile Include="Dominio\Parametricas\DiaSemana.cs" />
+    <Compile Include="Dominio\Parametricas\MedioDePago.cs" />
+    <Compile Include="Dominio\Parametricas\TipoCliente.cs" />
     <Compile Include="Excel\TipoArchivoExcel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Excel\RegistroExcel.cs" />

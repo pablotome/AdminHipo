@@ -63,7 +63,6 @@ GO
 ALTER TABLE [dbo].[Sucursales] CHECK CONSTRAINT [FK_Sucursales_TiposSucursales]
 GO
 
-
 select * from Provincias
 
 set identity_insert Provincias on

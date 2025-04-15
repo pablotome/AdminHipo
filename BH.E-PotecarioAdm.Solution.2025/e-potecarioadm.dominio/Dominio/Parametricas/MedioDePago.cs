@@ -2,22 +2,22 @@
 
 namespace BH.EPotecario.Adm.Dominio
 {
-    public class TipoCliente
+    public class MedioDePago
     {
-        public virtual int CodTipoCliente { get; set; }
+        public virtual int CodMedioDePago { get; set; }
         public virtual string Nombre { get; set; }
         public virtual string Slug { get; set; }
     }
 
-    public class TipoClienteMap : ClassMap<TipoCliente>
+    public class MedioDePagoMap : ClassMap<MedioDePago>
     {
-        public TipoClienteMap()
+        public MedioDePagoMap()
         {
             // Mapeo de la tabla
-            Table("TipoCliente");
+            Table("BEN_MedioDePago");
 
             // Mapeo de la clave primaria
-            Id(a => a.CodTipoCliente).GeneratedBy.Identity();
+            Id(a => a.CodMedioDePago).GeneratedBy.Identity();
 
             // Mapeo de las propiedades
             Map(a => a.Nombre).Length(50).Not.Nullable();

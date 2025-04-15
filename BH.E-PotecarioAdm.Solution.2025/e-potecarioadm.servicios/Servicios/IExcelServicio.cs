@@ -33,7 +33,7 @@ namespace BH.EPotecario.Adm.Servicios
             using (SqlConnection connection = Conexion.GetSysNet().DB.Connection.GetConnection() as SqlConnection)
             {
                 using (SqlCommand command = new SqlCommand(
-                    "INSERT INTO ImportacionesExcel (NombreArchivo, UsuarioImportacion, TipoImportacion, EstadoImportacion) " +
+                    "INSERT INTO DBO.BEN_ImportacionesExcel (NombreArchivo, UsuarioImportacion, TipoImportacion, EstadoImportacion) " +
                     "VALUES (@NombreArchivo, @UsuarioImportacion, @TipoImportacion, 'En Proceso'); " +
                     "SELECT SCOPE_IDENTITY();", connection))
                 {
@@ -52,7 +52,7 @@ namespace BH.EPotecario.Adm.Servicios
             using (SqlConnection connection = Conexion.GetSysNet().DB.Connection.GetConnection() as SqlConnection)
             {
                 using (SqlCommand command = new SqlCommand(
-                    "UPDATE ImportacionesExcel SET " +
+                    "UPDATE DBO.BEN_ImportacionesExcel SET " +
                     "CantidadRegistros = @CantidadRegistros, " +
                     "CantidadErrores = @CantidadErrores, " +
                     "EstadoImportacion = @EstadoImportacion " +

@@ -50,6 +50,7 @@ namespace BH.EPotecario.Adm.Dominio
         public bool MediosDePagoValido { get; set; }
         public bool DiasValido { get; set; }
         public bool CFTValido { get; set; }
+        public bool TopeReintegroValido { get; set; }
         public bool PrioridadValido { get; set; }
 
         public string BasesYCondicionesGrilla
@@ -77,9 +78,10 @@ namespace BH.EPotecario.Adm.Dominio
                 MediosDePagoValido = !string.IsNullOrEmpty(MediosPago) && MediosDePagoValido;
                 DiasValido = !string.IsNullOrEmpty(Dias) && DiasValido;
                 CFTValido = string.IsNullOrEmpty(CFT) || (!string.IsNullOrEmpty(CFT) && Regex.IsMatch(CFT, @"^\d+(\.\d+)?\s?%$"));
+                TopeReintegroValido = string.IsNullOrEmpty(TopeReintegro) || (!string.IsNullOrEmpty(TopeReintegro) && Regex.IsMatch(TopeReintegro, @"^\d+$"));
                 PrioridadValido = string.IsNullOrEmpty(Prioridad) || (!string.IsNullOrEmpty(Prioridad) && Regex.IsMatch(Prioridad, @"^\d+$"));
 
-                return TituloValido && ClientesValido && MediosDePagoValido && DiasValido && CFTValido && PrioridadValido;
+                return TituloValido && ClientesValido && MediosDePagoValido && DiasValido && CFTValido && TopeReintegroValido && PrioridadValido;
             }
         }
 
@@ -109,6 +111,9 @@ namespace BH.EPotecario.Adm.Dominio
 
                 if (!CFTValido)
                     errores += "El cft debe ser vacío o un número seguido de \"%\".";
+
+                if (!TopeReintegroValido)
+                    errores += "El tope de reintegro debe ser vacío o un número entero.";
 
                 if (!PrioridadValido)
                     errores += "La prioridad debe ser vacío o un dato válido.";
